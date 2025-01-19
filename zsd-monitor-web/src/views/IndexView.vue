@@ -67,9 +67,12 @@ const dark = ref(useDark())
 
 // tabs数组中添加策略组入口，并放在管理按钮之前
 const tabs = [
-  {id: 3, name: '策略组', route: 'strategyGroup'}, // 策略组入口
+  {id: 3, name: '策略组', route: 'strategy-group'}, // 策略组入口
   {id: 1, name: '管理', route: 'manage'},
-  {id: 2, name: '安全', route: 'security'}
+  {id: 2, name: '安全', route: 'security'},
+  {id: 4, name: '告警', route:  'create-Alarm'},
+  {id: 5, name: '消息', route: 'events-notifications'} // 新增事件与通知选项
+
 ]
 
 const defaultIndex = () => {
